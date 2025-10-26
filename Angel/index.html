@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panasonic Audio </title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-grid">
+            <div class="header-logo">
+                <img src="img/logo.panasonic.svg" alt="">
+            </div>
+            <div class="header-brand">AUDIO COMPLETAMENTE FUERTE</div>
+            <div class="header-search">
+                <input type="text" placeholder="Buscar en la web...">
+            </div>
+        </div>
+    </header>
+
+    <section class="main-product-section">
+        <div class="container">
+            <div class="product-text-block">
+                <h1>El Poder del Sonido P U R O.</h1>
+                <h2>La nueva generación de parlantes Panasonic ha llegado.</h2>
+                <h2>Descubre el Parlante Panasonic perfecto para tus reuniones, fiestas o momentos de relax. Con un
+                    sonido potente y claro, tecnología de bajos profundos, y un diseño elegante y portátil, disfrutarás
+                    tu música favorita en cualquier lugar.</h2>
+            </div>
+
+            <div class="content-grid">
+                <div class="product-image-main">
+                    <img src="img/panasonic7.webp" alt="Parlante Panasonic SC-TMAX70">
+                    <p class="caption"><strong>PANASONIC</strong></p>
+                </div>
+
+                <div class="description-block desc-1">
+                    <h3>BAJOS EXPLOSIVOS</h3>
+                    <p>Woofer de 20cm con doble bobina. Siente cada nota en el pecho con su conectividad
+                        <strong>conectividad de bluetooth</strong>.
+                    </p>
+                </div>
+                <div class="description-block desc-2">
+                    <h3>10 HORAS DE FIESTA</h3>
+                    <p>Batería de ultra duración, recarga rápida y conexión ininterrumpidanVive una
+                        experiencia de sonido incomparable con el <strong>Parlante Panasonic</strong>.</p>
+                </div>
+                <div class="image-mini-block img-mini-1">
+                    <img src="img/panasonic4.jpeg" alt="Detalle de Luces">
+                    <p class="caption">ILUMINACIÓN DINÁMICA</p>
+                </div>
+                <div class="image-mini-block img-mini-2">
+                    <img src="img/panasonic5.jpg" alt="Panel de Control">
+                    <p class="caption">PANEL TÁCTIL INTELIGENTE</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h3 class="faq-title">PREGUNTAS FRECUENTES</h3>
+            <div class="faq-content">
+                <p><strong>¿Tienen garantía?</strong> Sí, 12 meses directos con el fabricante.</p>
+                <p><strong>¿Puedo conectar mi micrófono?</strong> Por supuesto, tiene doble entrada para Karaoke.</p>
+                <p><strong>¿Cuanto tiempo dura la bateria?</strong> Dura 8 horas de bateria sin parar de escuchar.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="order-section">
+        <div class="container">
+            <h3 class="order-cta-title">PEDIR PRODUCTO AHORA</h3>
+
+            <form class="order-form-centered" id="orderForm" onsubmit="saveFormData(event); return false;">
+                <input type="text" placeholder="Nombre" required>
+                <input type="text" placeholder="Apellido" required>
+                <input type="text" placeholder="Dirección" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Número" required>
+
+                <div class="send-container">
+                    <button type="submit" class="btn-send">ENVIAR</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-item footer-logo">
+                <img src="img/logo.panasonic.svg" alt="">
+            </div>
+            <div class="footer-item footer-phone">
+                <p>ESCRIBENOS AL </p>
+                <i class="fab fa-whatsapp"></i> <a href="">+51 987 654 321</a>
+            </div>
+            <div class="footer-item footer-links">
+                <a href="#">ENLACE</a> |
+                <a href="#">Soporte</a>
+            </div>
+            <div class="footer-item footer-social">
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <div class="floating-btn-container">
+                <button id="togglePopupBtn" class="floating-btn">
+                    <i class="fas fa-caret-up"></i>
+                </button>
+
+                <div id="infoPopup" class="popup-box">
+                    <p> Panasonic ofrecen un sonido potente y nítido con una buena respuesta de bajos, así como opciones
+                        de conectividad versátiles como Bluetooth y USB. Cuentan con diseños elegantes y, en algunos
+                        modelos, funciones adicionales como iluminación azul, DJ Jukebox y ecualización para adaptarse a
+                        diferentes géneros musicales. </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
